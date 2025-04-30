@@ -45,6 +45,7 @@ ul {
   text-transform: uppercase;
   text-decoration: none;
   color: #2e2f42;
+  margin-right: -50px;
 }
 
 .accent {
