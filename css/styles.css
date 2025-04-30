@@ -147,7 +147,7 @@ h1 {
 
 .features > ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 h3 {
@@ -187,7 +187,7 @@ h2 {
   display: flex;
   margin-top: 72px;
   margin-bottom: 120px;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 /* EĞİTMEN İÇİN NOT: body etiketi içerisine color:#434455 stilini eklememe rağmen siyah renk uygulandığı için bu kısımlara tekrardan renk kodu girdim. */
@@ -210,7 +210,7 @@ h2 {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 72px;
   row-gap: 16px;
 }
@@ -232,7 +232,9 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 100px 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 15px;
 }
 
 .footer-logo {
