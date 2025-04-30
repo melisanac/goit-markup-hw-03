@@ -10,11 +10,31 @@ ul {
   list-style-type: none;
 }
 
-/* EĞİTMEN İÇİN NOT: Geliştirici araç ile Our Team kategorisindeki görsellere baktığımda padding özelliğinin 40px olduğunu gördüm. Yazılar direkt sola girintisiz 
-hizalandığı için görsel açıdan girintili çıkıntılı görünmesin diye padding-left: 40px; özelliği verdim. Sadece butona bu özelliği ilave edemedim sanırım önümüzdeki 
-dersin konusuna biraz erken giriş yaptım :)  */
+.container {
+  width: 1158px;
+  margin: 0 auto;
+}
+
+.images-text {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 16px;
+  gap: 8px;
+}
+
+.blank {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
 /* Header kısmına ait stil kodları */
+.top-line {
+  display: flex;
+  justify-content: space-around;
+  padding: 24px 0;
+  border-top: 2px solid #e7e9fc;
+}
+
 /* Üst logo */
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -25,7 +45,6 @@ dersin konusuna biraz erken giriş yaptım :)  */
   text-transform: uppercase;
   text-decoration: none;
   color: #2e2f42;
-  padding-left: 40px;
 }
 
 .accent {
@@ -33,6 +52,11 @@ dersin konusuna biraz erken giriş yaptım :)  */
 }
 
 /* Navigasyon */
+.nav > ul {
+  display: flex;
+  gap: 40px;
+}
+
 .nav a {
   font-weight: 500;
   font-size: 16px;
@@ -52,13 +76,17 @@ li > .active:active {
 }
 
 /* Adres */
+.adres {
+  display: flex;
+  gap: 40px;
+}
+
 .adres a {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   color: #434455;
   text-decoration: none;
-  padding-left: 40px;
 }
 
 .adres a:hover,
@@ -69,7 +97,8 @@ li > .active:active {
 /* Main kısmına ait stil kodları */
 /* Hero */
 .hero {
-  height: 600px;
+  display: flex;
+  flex-direction: column;
   background: #2e2f42;
 }
 
@@ -79,6 +108,7 @@ h1 {
   line-height: 1.07143;
   text-align: center;
   padding-top: 188px;
+  align-items: center;
   color: #ffffff;
 }
 
@@ -96,6 +126,13 @@ h1 {
   background: #4d5ae5;
   cursor: pointer;
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 48px;
+  margin-right: auto;
+  margin-bottom: 188px;
+  margin-left: auto;
 }
 
 .button:hover,
@@ -104,6 +141,15 @@ h1 {
 }
 
 /* Features */
+.features li {
+  width: 264px;
+}
+
+.features > ul {
+  display: flex;
+  justify-content: space-between;
+}
+
 h3 {
   font-weight: 500;
   font-size: 20px;
@@ -125,6 +171,8 @@ h3 {
 /* Team */
 .team {
   background: #f4f4fd;
+  display: flex;
+  flex-direction: column;
 }
 
 h2 {
@@ -135,10 +183,11 @@ h2 {
   color: #2e2f42;
 }
 
-/* EĞİTMEN İÇİN NOT: Görsel boyutları CSS kodu ile ayarlandı */
-.team-images {
-  width: 264px;
-  height: 260px;
+.team-list {
+  display: flex;
+  margin-top: 72px;
+  margin-bottom: 120px;
+  justify-content: space-between;
 }
 
 /* EĞİTMEN İÇİN NOT: body etiketi içerisine color:#434455 stilini eklememe rağmen siyah renk uygulandığı için bu kısımlara tekrardan renk kodu girdim. */
@@ -153,29 +202,37 @@ h2 {
 }
 
 /* Portfolyo */
-.portfolio-images {
-  width: 360px;
-  height: 300px;
+.portfolio {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 72px;
+  row-gap: 16px;
 }
 
 .portfolio-list > li {
-  width: 364px;
+  width: 360px;
   color: #434455;
+}
+
+.brd {
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
 }
 
 /* Footer kısmına ait stil kodları */
 .footer {
-  height: 312px;
-  padding-left: 40px;
-  padding-top: 100px;
   background: #2e2f42;
-}
-
-.text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #f4f4fd;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 100px 0;
 }
 
 .footer-logo {
@@ -187,4 +244,11 @@ h2 {
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f4f4fd;
 }
